@@ -1,0 +1,60 @@
+﻿@using BankAPI.Application.Constants;
+@using BankAPI.Application.Repositories;
+@using BankAPI.Controllers;
+@using BankAPI.Models;
+@using System.Globalization;
+@model IList<Decision>
+@{
+    int index = ViewBag.Index;
+}
+
+<html>
+
+<body>
+
+    @{
+        if (index > 0)
+        {
+            @using (Html.BeginForm("GetAll", "Home", new { @index = index - 1 }, FormMethod.Get, false, new { enctype = "multipart/form-data" }))
+            {
+
+                <input type="submit" class="btn btn-primary " value="Load pre" />
+
+            }
+        }
+
+        @using (Html.BeginForm("GetAll", "Home", new { @index = index + 1 }, FormMethod.Get, false, new { enctype = "multipart/form-data" }))
+        {
+
+            <input type="submit" class="btn btn-primary " value="Load more" />
+
+        }
+
+        if (Model != null)
+        {
+            foreach (var item in Model)
+            {
+                <span>@item.Stock.Date.ToString("MMM/dd", new CultureInfo("en-US"))&emsp;</span>
+                if (item.Type == DecisionTypes.Buy)
+                {
+                    <span style="color:green;">@item.Type</span>
+                }
+                else if (item.Type == DecisionTypes.Sell)
+                {
+                    <span style="color:red;">@item.Type</span>
+                }
+                else if (item.Type == DecisionTypes.Keep)
+                {
+                    <span style="color:grey;" class="fw-bold">@item.Type</span>
+                }
+                <span style="color:darkcyan;">&emsp;&emsp;@item.Description</span>
+                <br />
+            }
+        }
+    }
+
+</body>
+</html>
+
+
+
