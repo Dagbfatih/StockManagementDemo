@@ -32,7 +32,7 @@ namespace BankAPI.Controllers
             IList<Decision> decisions = _algorithmDistributor.Distribute(
                     _stocks.Skip(index * first).Take(first).ToList());
             ViewBag.Index = index;
-            return View("Home", decisions);
+            return View("Home", decisions); 
         }
     }
 }
