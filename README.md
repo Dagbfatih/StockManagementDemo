@@ -34,15 +34,19 @@ Bu yazılım ise bu pattern'lerden bazılarını tanımlayıp ona göre hisse al
 
 ## Algoritma
 Sistem 3 ana entity'e sahiptir. Bunlar `Stock`, `Possibility` ve `Decision`'dır.
+
 ![Ekran görüntüsü 2023-11-19 113013](https://github.com/Dagbfatih/StockManagementDemo/assets/74913012/81da61c0-05ff-46da-ad25-e853014409dd)
 
 `Stock`: Veritabanından gelen Hisseyi temsil eder.
+
 ![Ekran görüntüsü 2023-11-19 113625](https://github.com/Dagbfatih/StockManagementDemo/assets/74913012/86a85552-08fb-4841-94ac-21243659b2a7)
 
 `Possibility`: **Olasılık Algoritması.** Stock'ların hangi Candlestick Pattern'ine uygun olduğuna göre ve önceki stock'ların durumlarına göre hisse fiyatının %? ihtimalle yükseleceğini ya da düşeceğini tahmin eder.
+
 ![Ekran görüntüsü 2023-11-19 113654](https://github.com/Dagbfatih/StockManagementDemo/assets/74913012/aa7b1a20-8044-46a7-876d-366c4dde824a)
 
 `Decision`: **Karar Algoritması.** `Possiblity`'lere göre hissenin satın alınıp alınmaması gerektiğine karar veren sistemdir. Hisseyi `Sell`, `Buy` ya da `Keep` şeklinde üç durumla kontrol eder.
+
 ![Ekran görüntüsü 2023-11-19 113934](https://github.com/Dagbfatih/StockManagementDemo/assets/74913012/8b6d22bc-d869-488f-a972-00964ee4a6ff)
 
 Algoritma bu şekilde ilerler. 
@@ -53,6 +57,7 @@ Algoritma bu şekilde ilerler.
 Buradaki 2. ve 3. işlemler için hesaplama işlemleri pattern'lere **dağıtılır** ve küçük parçalar halinde yönetilir.
 Bu dağıtma işlemine karar veren `Distributor`'ler vardır.
 Bunlar, hissenin pattern'ine göre hangi algoritma tarafından işleneceğine karar verir.
+
 ![Ekran görüntüsü 2023-11-19 112837](https://github.com/Dagbfatih/StockManagementDemo/assets/74913012/18074d2a-e632-4261-9ba5-4fc68053e9f6)
 ![Ekran görüntüsü 2023-11-19 112748](https://github.com/Dagbfatih/StockManagementDemo/assets/74913012/a7f8e2f9-f89f-4d0e-96a3-89afb30d5838)
 
