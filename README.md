@@ -13,20 +13,20 @@ Bu grafikleri finans uzmanları okurken önemli 12 tane pattern den yararlanarak
 
 ### **Bunlar**:
 ### Hisse Fiyatlarının Yükselişine İşaret Eden:
-1- Hammer
-2- Inverse Hammer
-3- Morning Star
-4- Bullish Engulfing
-5- Piercing Line
-6- Three White Soldiers
+1. Hammer
+2. Inverse Hammer
+3. Morning Star
+4. Bullish Engulfing
+5. Piercing Line
+6. Three White Soldiers
 
 ### Hisse Fiyatlarının Düşüşüne İşaret Eden:
-7- Hanging Man
-8- Dark Cloud Cover
-9- Shooting Star
-10- Bearish Engulfing
-11- Evening Star
-12- Three Black Crows
+7. Hanging Man
+8. Dark Cloud Cover
+9. Shooting Star
+10. Bearish Engulfing
+11. Evening Star
+12. Three Black Crows
 
 Bu yazılım ise bu pattern'lerden bazılarını tanımlayıp ona göre hisse alım satımı yapmaktadır.
 
@@ -55,10 +55,10 @@ Bunlar, hissenin pattern'ine göre hangi algoritma tarafından işleneceğine ka
 ![Ekran görüntüsü 2023-11-19 112748](https://github.com/Dagbfatih/StockManagementDemo/assets/74913012/a7f8e2f9-f89f-4d0e-96a3-89afb30d5838)
 
 ### İş akışı:
-1- Sistem bir repo ile verileri **.CSV** dosyasından çeker ve `Stock` modeli ile mapler.
-2- Bu Stock'lar MainDistributor ile önce `PossibilityAlgorithm`'e gönderilir ve her birinin olasılıkları hesaplanır.
-3- MainDistributor bu `Possibility`'leri aldıktan sonra `DecisionAlgorithm`'e gönderir ve `Decision`ları alır.
-4- Bu decision'lar ekrana yazdırılır.
+1. Sistem bir repo ile verileri **.CSV** dosyasından çeker ve `Stock` modeli ile mapler.
+2. Bu Stock'lar MainDistributor ile önce `PossibilityAlgorithm`'e gönderilir ve her birinin olasılıkları hesaplanır.
+3. MainDistributor bu `Possibility`'leri aldıktan sonra `DecisionAlgorithm`'e gönderir ve `Decision`ları alır.
+4. Bu decision'lar ekrana yazdırılır.
 
 **Proje (https://www.amcharts.com/demos/stock-chart-candlesticks/#code) tarafındaki veriyi simüle etmektedir.**
 **Eğer algoritmanın ne kadar doğru çalıştığını görmek isterseniz burayı kontrol ediniz.**
