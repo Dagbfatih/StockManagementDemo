@@ -5,7 +5,7 @@ Bu proje **Fatih Dağ** tarafından geliştirilmiştir. Proje **ASP.NET MVC** ku
 Bu proje hisse alım satım robotlarının algoritmasını simüle etmek amacıyla geliştirilmiştir.
 Projenin kod kalitesine değil algoritmanın işleyişine odaklanılmıştır.
 
-**Proje (https://www.amcharts.com/demos/stock-chart-candlesticks/#code) tarafındaki veriyi simüle etmektedir.**
+**Proje (https://www.amcharts.com/demos/stock-chart-candlesticks) tarafındaki veriyi simüle etmektedir.**
 
 ## Mum Grafikleri
 Algoritma için **candlesick chart pattern**'lerden yararlanılmıştır. Candlesick grafikleri bir hissenin bir zaman aralığında (ör:`1dk aralıkla`) değişimini gösteren grafiklerdir.
@@ -67,7 +67,7 @@ Bunlar, hissenin pattern'ine göre hangi algoritma tarafından işleneceğine ka
 3. MainDistributor bu `Possibility`'leri aldıktan sonra `DecisionAlgorithm`'e gönderir ve `Decision`ları alır.
 4. Bu decision'lar ekrana yazdırılır.
 
-**Proje (https://www.amcharts.com/demos/stock-chart-candlesticks/#code) tarafındaki veriyi simüle etmektedir.**
+**Proje (https://www.amcharts.com/demos/stock-chart-candlesticks/) tarafındaki veriyi simüle etmektedir.**
 **Eğer algoritmanın ne kadar doğru çalıştığını görmek isterseniz burayı kontrol ediniz.**
 
 **Not:** Bu projede `Algorithm`ler dışındaki bölümlerin kod kalitesine dikkat edilmemiştir.
