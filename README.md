@@ -27,6 +27,7 @@ Bu grafikleri finans uzmanları okurken önemli 12 tane pattern den yararlanarak
 10. Bearish Engulfing
 11. Evening Star
 12. Three Black Crows
+    
 ***Ayrıntılı bilgi:*** (https://tr.beincrypto.com/kripto-para-okulu/mum-formasyonlari-okuma-ve-anlama-rehberi/)
 Bu yazılım ise bu pattern'lerden bazılarını tanımlayıp ona göre hisse alım satımı yapmaktadır.
 
