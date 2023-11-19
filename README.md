@@ -1,5 +1,5 @@
 # StockManagementDemo
-Stock management demo
+Bu proje Fatih Dağ tarafından geliştirilmiştir. Proje ASP.NET MVC kullanılarak yazılmıştır. bu proje sadece algoritma yapısını oluşturmak amacıyla geliştirilmiştir.
 
 ## Hakkında
 Bu proje hisse alım satım robotlarının algoritmasını simüle etmek amacıyla geliştirilmiştir.
