@@ -18,7 +18,7 @@ namespace BankAPI.Controllers
         }
         public IActionResult Index()
         {
-            IList<Decision> decisions = _algorithmDistributor.Distribute(
+            IList<Suggestion> decisions = _algorithmDistributor.Distribute(
                     _stocks.Take(100).ToList());
             ViewBag.Index = 0;
             //ViewBag.Possibilities = possibilities;
@@ -29,7 +29,7 @@ namespace BankAPI.Controllers
         [HttpGet("[Action]/{index}")]
         public IActionResult GetAll(int index = 0, int first = 100)
         {
-            IList<Decision> decisions = _algorithmDistributor.Distribute(
+            IList<Suggestion> decisions = _algorithmDistributor.Distribute(
                     _stocks.Skip(index * first).Take(first).ToList());
             ViewBag.Index = index;
             return View("Home", decisions); 

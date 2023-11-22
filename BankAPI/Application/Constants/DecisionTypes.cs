@@ -2,8 +2,9 @@
 {
     public enum DecisionTypes
     {
-        Buy,
-        Sell,
-        Keep
+        Sold,
+        Bought,
+        Keeped,
+        NoMany
     }
 }

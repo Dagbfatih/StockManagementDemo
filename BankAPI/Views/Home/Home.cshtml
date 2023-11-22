@@ -3,7 +3,7 @@
 @using BankAPI.Controllers;
 @using BankAPI.Models;
 @using System.Globalization;
-@model IList<Decision>
+@model IList<Suggestion>
 @{
     int index = ViewBag.Index;
 }
@@ -37,15 +37,15 @@
             foreach (var item in Model)
             {
                 <span>@item.Stock.Date.ToString("MMM/dd", new CultureInfo("en-US"))&emsp;</span>
-                if (item.Type == DecisionTypes.Buy)
+                if (item.Type == SuggestionTypes.Buy)
                 {
                     <span style="color:green;">@item.Type</span>
                 }
-                else if (item.Type == DecisionTypes.Sell)
+                else if (item.Type == SuggestionTypes.Sell)
                 {
                     <span style="color:red;">@item.Type</span>
                 }
-                else if (item.Type == DecisionTypes.Keep)
+                else if (item.Type == SuggestionTypes.Keep)
                 {
                     <span style="color:grey;" class="fw-bold">@item.Type</span>
                 }

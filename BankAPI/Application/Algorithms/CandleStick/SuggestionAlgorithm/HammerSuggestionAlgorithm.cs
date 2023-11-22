@@ -2,15 +2,15 @@
 using BankAPI.Application.Constants;
 using BankAPI.Models;
 
-namespace BankAPI.Application.Algorithms.CandleStick.DecisionAlgorithm
+namespace BankAPI.Application.Algorithms.CandleStick.SuggestionAlgorithm
 {
-    public class HammerDesicionAlgorithm : ICandleStickAlgorithm<Possibility, Decision>
+    public class HammerSuggestionAlgorithm : ICandleStickAlgorithm<Possibility, Suggestion>
     {
-        public Decision Calculate(Possibility possibility)
+        public Suggestion Calculate(Possibility possibility)
         {
-            return new Decision
+            return new Suggestion
             {
-                Type = DecisionTypes.Buy,
+                Type = SuggestionTypes.Buy,
                 Description = "Hammer pattern seen, %" + possibility.Percentage + " success possibility.",
                 Stock = possibility.Stock,
             };

@@ -6,13 +6,20 @@ namespace BankAPI.Application.Services.CandleStick
 {
     public class CandleStickChartService
     {
-        MainAlgorithmDistributor _distributor;
+        private readonly MainAlgorithmDistributor _distributor;
+
         public CandleStickChartService(MainAlgorithmDistributor algorithmDistributor)
         {
             _distributor = algorithmDistributor;
         }
 
-        public IList<Decision> CalculatePossibilities(IList<Stock> stocks)
+        public IList<Suggestion> CalculateDecisionsWithVirtualMoney(IList<Stock> stocks)
+        {
+            var result = _distributor.Distribute(stocks);
+            return result;
+        }
+
+        public IList<Suggestion> CalculateDecisions(IList<Stock> stocks)
         {
             var result = _distributor.Distribute(stocks);
             return result;

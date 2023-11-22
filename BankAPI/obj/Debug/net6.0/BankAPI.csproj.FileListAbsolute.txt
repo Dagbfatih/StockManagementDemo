@@ -100,3 +100,4 @@ D:\Software\AspNetMVC\StockManagementDemo\BankAPI\obj\Debug\net6.0\refint\BankAP
 D:\Software\AspNetMVC\StockManagementDemo\BankAPI\obj\Debug\net6.0\BankAPI.pdb
 D:\Software\AspNetMVC\StockManagementDemo\BankAPI\obj\Debug\net6.0\BankAPI.genruntimeconfig.cache
 D:\Software\AspNetMVC\StockManagementDemo\BankAPI\obj\Debug\net6.0\ref\BankAPI.dll
+D:\Software\AspNetMVC\StockManagementDemo\BankAPI\obj\Debug\net6.0\BankAPI.sourcelink.json

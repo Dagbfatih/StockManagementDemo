@@ -2,15 +2,15 @@
 using BankAPI.Application.Constants;
 using BankAPI.Models;
 
-namespace BankAPI.Application.Algorithms.CandleStick.DecisionAlgorithm
+namespace BankAPI.Application.Algorithms.CandleStick.SuggestionAlgorithm
 {
-    public class EveningStarDesicionAlgorithm : ICandleStickAlgorithm<Possibility[], Decision>
+    public class EveningStarSuggestionAlgorithm : ICandleStickAlgorithm<Possibility[], Suggestion>
     {
-        public Decision Calculate(Possibility[] possibilities)
+        public Suggestion Calculate(Possibility[] possibilities)
         {
-            return new Decision
+            return new Suggestion
             {
-                Type = DecisionTypes.Sell,
+                Type = SuggestionTypes.Sell,
                 Description = "Evening Star pattern seen, %" + possibilities.Last().Percentage
                 + " decrease possibility. End of uptrend",
                 Stock = possibilities.Last().Stock,

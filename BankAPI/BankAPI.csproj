@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Application\Algorithms\CandleStick\SuggestionAlgorithm\" />
+    <Folder Include="Application\Algorithms\CandleStick\DecisionAlgorithm\" />
   </ItemGroup>
 
 </Project>

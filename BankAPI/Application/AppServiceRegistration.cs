@@ -1,6 +1,6 @@
-﻿using BankAPI.Application.Algorithms.CandleStick.DecisionAlgorithm;
-using BankAPI.Application.Algorithms.CandleStick.Distributors;
+﻿using BankAPI.Application.Algorithms.CandleStick.Distributors;
 using BankAPI.Application.Algorithms.CandleStick.PossibilityAlgorithm;
+using BankAPI.Application.Algorithms.CandleStick.SuggestionAlgorithm;
 using BankAPI.Application.Algorithms.CandleStick.TypeDetermineAlgorithm;
 using BankAPI.Application.Repositories;
 
@@ -24,20 +24,20 @@ namespace BankAPI.Application
             services.AddSingleton<ThreeWhiteSoldiersPossibilityAlgorithm>();
 
             // Decisions
-            services.AddSingleton<BearishEngulfingDecisionAlgorithm>();
-            services.AddSingleton<BullishEngulfingDecisionAlgorithm>();
-            services.AddSingleton<EveningStarDesicionAlgorithm>();
-            services.AddSingleton<HammerDesicionAlgorithm>();
-            services.AddSingleton<InvertedHammerDesicionAlgorithm>();
-            services.AddSingleton<PiercingLineDesicionAlgorithm>();
-            services.AddSingleton<ShootingStarDesicionAlgorithm>();
-            services.AddSingleton<ThreeBlackCrowsDesicionAlgorithm>();
-            services.AddSingleton<ThreeWhiteSoldiersDesicionAlgorithm>();
+            services.AddSingleton<BearishEngulfingSuggestionAlgorithm>();
+            services.AddSingleton<BullishEngulfingSuggestionAlgorithm>();
+            services.AddSingleton<EveningStarSuggestionAlgorithm>();
+            services.AddSingleton<HammerSuggestionAlgorithm>();
+            services.AddSingleton<InvertedHammerSuggestionAlgorithm>();
+            services.AddSingleton<PiercingLineSuggestionAlgorithm>();
+            services.AddSingleton<ShootingStarSuggestionAlgorithm>();
+            services.AddSingleton<ThreeBlackCrowsSuggestionAlgorithm>();
+            services.AddSingleton<ThreeWhiteSoldiersSuggestionAlgorithm>();
 
             // Distributors
             services.AddSingleton<MainAlgorithmDistributor>();
             services.AddSingleton<PossibilityAlgorithmDistributor>();
-            services.AddSingleton<DecisionAlgorithmDistributor>();
+            services.AddSingleton<SuggestionAlgorithmDistributor>();
 
             return services;
         }

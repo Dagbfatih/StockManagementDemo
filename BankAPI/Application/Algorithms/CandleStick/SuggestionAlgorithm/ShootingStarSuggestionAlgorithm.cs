@@ -2,15 +2,15 @@
 using BankAPI.Application.Constants;
 using BankAPI.Models;
 
-namespace BankAPI.Application.Algorithms.CandleStick.DecisionAlgorithm
+namespace BankAPI.Application.Algorithms.CandleStick.SuggestionAlgorithm
 {
-    public class ShootingStarDesicionAlgorithm : ICandleStickAlgorithm<Possibility, Decision>
+    public class ShootingStarSuggestionAlgorithm : ICandleStickAlgorithm<Possibility, Suggestion>
     {
-        public Decision Calculate(Possibility possibility)
+        public Suggestion Calculate(Possibility possibility)
         {
-            return new Decision
+            return new Suggestion
             {
-                Type = DecisionTypes.Sell,
+                Type = SuggestionTypes.Sell,
                 Description = "Shooting Star pattern seen, %" + possibility.Percentage + " decrease possibility.",
                 Stock = possibility.Stock,
             };

@@ -2,15 +2,15 @@
 using BankAPI.Application.Constants;
 using BankAPI.Models;
 
-namespace BankAPI.Application.Algorithms.CandleStick.DecisionAlgorithm
+namespace BankAPI.Application.Algorithms.CandleStick.SuggestionAlgorithm
 {
-    public class ThreeWhiteSoldiersDesicionAlgorithm : ICandleStickAlgorithm<Possibility[], Decision>
+    public class ThreeWhiteSoldiersSuggestionAlgorithm : ICandleStickAlgorithm<Possibility[], Suggestion>
     {
-        public Decision Calculate(Possibility[] possibilities)
+        public Suggestion Calculate(Possibility[] possibilities)
         {
-            return new Decision
+            return new Suggestion
             {
-                Type = DecisionTypes.Buy,
+                Type = SuggestionTypes.Buy,
                 Description = "Three White Soldiers pattern seen, %" + possibilities.Last().Percentage
                 + " increase possibility.",
                 Stock = possibilities.Last().Stock,
